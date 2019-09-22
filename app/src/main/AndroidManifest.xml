@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MessageDetail"></activity>
+        <activity android:name=".UserDelete"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MessageDetail" />
         <activity android:name=".New_message" />
         <activity android:name=".TimeTableInsert" />
         <activity android:name=".Subject_Insert" />

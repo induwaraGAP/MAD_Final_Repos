@@ -22,9 +22,13 @@ class PagerViewAdapter extends FragmentPagerAdapter {
             case 1:
                 UsersFragment usersfragment = new UsersFragment();
                 return usersfragment;
-            case 2:
+            case 3:
                 NotificationFragment notificationFragment =  new NotificationFragment();
                 return notificationFragment;
+            case 2:
+                fragment_free fragment_free_f =  new fragment_free();
+                return fragment_free_f;
+
                 default:
                     return  null;
 
@@ -35,6 +39,7 @@ class PagerViewAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+
+        return 4;
     }
 }

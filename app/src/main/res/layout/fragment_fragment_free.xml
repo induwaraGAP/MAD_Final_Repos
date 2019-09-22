@@ -3,17 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
     android:layout_margin="0dp"
-    tools:context=".ProfileFragment">
+    tools:context=".fragment_free">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:background="@drawable/fragment_background">
-
         <!-- TODO: Update blank fragment layout -->
+
+<!--            app:layout_constraintEnd_toE="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.538"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
 
     </RelativeLayout>
 

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserDelete"></activity>
+        <activity android:name=".NotificationUpdate"></activity>
+        <activity android:name=".UserDelete" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MessageDetail" />
         <activity android:name=".New_message" />

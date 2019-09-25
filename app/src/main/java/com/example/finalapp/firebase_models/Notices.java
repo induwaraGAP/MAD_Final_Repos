@@ -21,7 +21,7 @@ public class Notices {
         this.message =  message;
         this.date = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(Calendar.getInstance().getTime());;
         this.subject = subject;
-        this.msg_id =  this.sender+"sep" + this.date+"sep" +this.subject;
+        this.msg_id =  this.sender+"sep" + this.date ;
     }
 
     public String getMessage() {

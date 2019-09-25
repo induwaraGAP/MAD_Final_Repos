@@ -4,19 +4,190 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="0dp"
-    tools:context=".fragment_free">
+    tools:context=".fragment_free"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
-        android:background="@drawable/fragment_background">
+        android:background="@drawable/fragment_background"  >
         <!-- TODO: Update blank fragment layout -->
 
-<!--            app:layout_constraintEnd_toE="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.538"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the time hh|mm"
+            android:textSize="12dp"
+            android:layout_marginStart="9dp"
+            />
+        <Spinner
+            android:id="@+id/hspinner"
+            android:layout_width="wrap_content"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:spinnerMode="dialog"
+             />
+
+        <Spinner
+            android:id="@+id/mspinner"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:spinnerMode="dialog"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:id="@+id/Year"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Year"
+                android:textSize="12dp"  />
+            <Spinner
+                android:id="@+id/yspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:spinnerMode="dialog"/>
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textSize="11dp"
+                android:text="semester"  />
+            <Spinner
+                android:id="@+id/sspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:dropDownHeight="10dp"
+                android:spinnerMode="dialog"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp">
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="50dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:textSize="12dp"
+                android:text="Group"/>
+
+            <Spinner
+                android:id="@+id/gspinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:spinnerMode="dialog"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="110dp">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="12dp"
+        android:text="Faculty  "
+        android:layout_marginStart="9dp"/>
+    <Spinner
+        android:id="@+id/fspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dialog" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:textSize="12dp"
+        android:text="Day" />
+
+    <Spinner
+        android:id="@+id/dspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:spinnerMode="dialog" />
+
+</LinearLayout>
+
+
+        <ListView
+            android:id="@+id/freelist"
+            android:layout_width="wrap_content"
+            android:layout_height="444dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginEnd="23dp"
+
+            android:layout_marginBottom="63dp"
+            android:background="@drawable/back" />
+
+        <Button
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/fragment_btn_free"
+        android:text="Search " />
 
 
     </RelativeLayout>

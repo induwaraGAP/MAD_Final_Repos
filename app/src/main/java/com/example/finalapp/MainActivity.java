@@ -36,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SystemUser us = new SystemUser("G A P Induwara","IT18140712","G9",2,2,"Computing","s");
+        SystemUser us = new SystemUser("G A P Induwara","IT18140712","G1",2,2,"Computing","s");
 
-        Intent gotouserreg = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(gotouserreg);
+//        Intent gotouserreg = new Intent(MainActivity.this, LoginActivity.class);
+//        startActivity(gotouserreg);
+
+
 
         if(currentitem != null) {
             intial = currentitem;

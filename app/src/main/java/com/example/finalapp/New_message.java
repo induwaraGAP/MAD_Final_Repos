@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.example.finalapp.firebase_models.Notices;
 import com.example.finalapp.models.SystemUser;
@@ -65,7 +66,7 @@ public class New_message extends AppCompatActivity {
                 ssender =  suns.getName();
                 sreciever =  reciever.getText().toString().split(",");
                 ssubject = subject.getText().toString();
-                for(int getreclist = 1 ; getreclist < sreciever.length;getreclist++)
+                for(int getreclist = 0 ; getreclist < sreciever.length;getreclist++)
                 {
                     Arrayreciver.add(sreciever[getreclist]);
                 }
@@ -73,6 +74,7 @@ public class New_message extends AppCompatActivity {
                 System.out.println("this is the set of recievers " +Arrayreciver);
                 notices =  new Notices(ssender,Arrayreciver,sbody,ssubject);
                 reffmgsinsert.child(notices.getMsg_id()).setValue(notices);
+                Toast.makeText(getApplicationContext(),"Successfully Published",Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -1,79 +1,42 @@
 {
   "project_info": {
-    "project_number": "739769500695" ,
+    "project_number": "739769500695",
     "firebase_url": "https://madprojectcourseappdatab-30495.firebaseio.com",
     "project_id": "madprojectcourseappdatab-30495",
-    "storage_bucket": ""
+    "storage_bucket": "madprojectcourseappdatab-30495.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:190647838511:android:087c947554f49f6b8023da",
+        "mobilesdk_app_id": "1:739769500695:android:a21128bb3885c07c2d0852",
         "android_client_info": {
           "package_name": "com.example.finalapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "190647838511-888v97kk01sj7j7oo3d5vmi23lv1294s.apps.googleusercontent.com",
+          "client_id": "739769500695-u028lekmehmk80m4afdfp74vo1o5qnpc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.finalapp",
-            "certificate_hash": "9797df068308bb864f0e506833d76ed6bc337c32"
+            "certificate_hash": "6ea3c6ea0a0f9f23564528f4f0ee4935ddfef387"
           }
         },
         {
-          "client_id": "190647838511-8rod9mqf41e7q4d5d28pvgc880rqn9a8.apps.googleusercontent.com",
+          "client_id": "739769500695-soalffk8q1lpcgn0517dg315ldsoghuh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAL_iXGn36ZX-mjI9ihNPvhhNX7N4R0H1M"
+          "current_key": "AIzaSyAh_45q8ukevywMENdVuWlhOT7DDfbZvf0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "190647838511-8rod9mqf41e7q4d5d28pvgc880rqn9a8.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:190647838511:android:6bb514341463b7b98023da",
-        "android_client_info": {
-          "package_name": "com.sliit.firebasetute005.finalapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "190647838511-s2rrp915sm40402dvtmlr5klsr7olpoj.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.sliit.firebasetute005.finalapp",
-            "certificate_hash": "cf30c74431faf6322943652e4010d33321ea0279"
-          }
-        },
-        {
-          "client_id": "190647838511-8rod9mqf41e7q4d5d28pvgc880rqn9a8.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAL_iXGn36ZX-mjI9ihNPvhhNX7N4R0H1M"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "190647838511-8rod9mqf41e7q4d5d28pvgc880rqn9a8.apps.googleusercontent.com",
+              "client_id": "739769500695-soalffk8q1lpcgn0517dg315ldsoghuh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

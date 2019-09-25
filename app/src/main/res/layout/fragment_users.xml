@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,251 +8,100 @@
 
     tools:context=".UsersFragment">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/fragment_background"
         android:layout_margin="15dp">
-        <!-- TODO: Update blank fragment layout -->
-        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/table_layout"
-            android:layout_width="350dp"
-            android:layout_height="330dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp">
-        <TableRow
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="1dp"
-            android:background="#ed8404">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3F51B5"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="MON"
-                android:textColor="#fff" />
+        <ListView
+            android:id="@+id/tblistviewfriday"
+            android:layout_width="67dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.612"
+            tools:ignore="DuplicateIds" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3F51B5"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="TUE"
-                android:textColor="#fff" />
+        <ListView
+            android:id="@+id/tblistviewthursday"
+            android:layout_width="67dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.672"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.619" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3F51B5"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="WED"
-                android:textColor="#fff" />
+        <ListView
+            android:id="@+id/tblistview"
+            android:layout_width="67dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.629" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3F51B5"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="THUR"
-                android:textColor="#fff" />
+        <ListView
+            android:id="@+id/tblistviewwednesday"
+            android:layout_width="67dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.626" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#3F51B5"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="FRI"
-                android:textColor="#fff" />
-        </TableRow>
+        <ListView
+            android:id="@+id/tblistviewtuesday"
+            android:layout_width="67dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.633" />
 
-        <TableRow
+        <ListView
+            android:id="@+id/tblistviewmonday"
+            android:layout_width="67dp"
+            android:layout_height="562dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.629"
+             >
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:background="#ed8404">
+        </ListView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="MON"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="TUE"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="WED"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="THUR"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="FRI"
-                android:textColor="#17202A" />
-        </TableRow>
-
-        <TableRow
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:background="#ed8404">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="MON"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="TUE"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="WED"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="THUR"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="FRI"
-                android:textColor="#17202A" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/row_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="4dp"
-            android:background="#ed8404">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="MON"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="TUE"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="WED"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="THUR"
-                android:textColor="#17202A" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#E5E7E9"
-                android:gravity="center"
-                android:padding="10dp"
-                android:text="FRI"
-                android:textColor="#17202A" />
-        </TableRow>
-
-    </TableLayout>
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="340dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TimeTable"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

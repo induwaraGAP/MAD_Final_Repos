@@ -9,4 +9,96 @@
     <string name="Sliit_ID">SLIIT ID</string>
     <string name="add">Add</string>
     <string name="send">Send</string>
+    <string name="welcome">Welcome</string>
+    <string name="timetable">Time Table</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="about">About Us</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="noItem">No Menu Option Item Selected&#8230;</string>
+    <string name="insertTimeSlot">Insert Time Slot</string>
+    <string name="updateTimeSlot">Update Time Slot</string>
+    <string name="subjectID">Subject Code</string>
+    <string name="enterSubCode">Enter Subject Code Here&#8230;</string>
+    <string name="group">Batch Group</string>
+    <string name="enterBatch">Enter Batch Group Here&#8230;</string>
+    <string name="startTime">Start Time</string>
+    <string name="endTime">End Time</string>
+    <string name="enterStartTime">Start Time Here&#8230;</string>
+    <string name="enterEndTime">End Time Here&#8230;</string>
+    <string-array name="dayOfTheWeek">
+        <item>-- Select Day of the Week --</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="classType">
+        <item>-- Select Class Type --</item>
+        <item>Lecture</item>
+        <item>Tutorial</item>
+        <item>Lab</item>
+    </string-array>
+    <string-array name="faculties">
+        <item>#Faculty</item>
+        <item>Computing</item>
+        <item>Business</item>
+        <item>Engineering</item>
+    </string-array>
+    <string-array name="years">
+        <item>#Year</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="semesters">
+        <item>#Semester</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="select_faculty">Select Faculty&#8230;</string>
+    <string name="year">Select Year&#8230;</string>
+    <string name="semester">Select Semester&#8230;</string>
+    <string name="day">Day of the Week</string>
+    <string name="hall">Hall / Lab Number</string>
+    <string name="class_type">Class Type</string>
+    <string name="lec">Lecturer / Instructor</string>
+    <string name="reset">Reset</string>
+    <string name="deleteTimSlot">Delete Time Slot</string>
+    <string name="selectClassType">Select Class Type&#8230;</string>
+    <string name="selectDay">Select the Day&#8230;</string>
+    <string name="faculty1">Faculty</string>
+    <string name="year1">Year</string>
+    <string name="semester1">Semester</string>
+    <string name="enterLecHallLab">Enter Lecture Hall or Lab Here&#8230;</string>
+    <string name="enterLecturer">Lecturers or Instructors (One Per Line)&#8230;</string>
+    <string name="noInternet">Internet Connection Failed!!!</string>
+    <string name="insertSuccess">Record Inserted Successfully!!!</string>
+    <string name="databaseError">Unknown Database Error Occoured</string>
+    <string name="requiredField">Please Enter All Informations!!!</string>
+    <string name="timeslotExist">TimeSlot Already Exists!!!</string>
+    <string name="search">Search</string>
+    <string name="noResults">No TimeSlots Found!!!</string>
+    <string name="empty">Database is Empty!!!</string>
+    <string name="resultsFound">TimeSlot Found!!!</string>
+    <string name="updateSuccess">Existing Recored Updated Successfully!!!</string>
+    <string name="noSearch">Please Search a TimeSlot to Update&#8230;</string>
+    <string name="deleteSuccess">Record Deleted Successfully!!!</string>
+    <string name="confirmDelete">Confirm Delete</string>
+    <string name="deleteConfirmation">Do you want to Delete this Record?</string>
+    <string name="cancel">Cancel</string>
+    <string name="timeslotTaken">TimeSlot Already Taken&#8230;</string>
+    <string name="noDelete">Please Search a TimeSlot to Delete&#8230;</string>
+    <string name="timeGapError">Incorrect Time Gap!!!</string>
+    <string name="parseError">Wrong Time Format!!!</string>
+    <string name="emptyImage">Background Image</string>
+    <string name="title_activity_timeslot">TimeSlotActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

@@ -63,6 +63,8 @@
             android:text="Notices"
             android:textColor="@color/texttabbright"
             android:textSize="16dp" />
+
+
     </LinearLayout>
 
     <androidx.viewpager.widget.ViewPager

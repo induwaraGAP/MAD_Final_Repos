@@ -7,4 +7,5 @@
     <color name="texttablight">#ffffff</color>
     <color name="texttabbright">#FFFFFF</color>
     <color name="new_msge_btn_color">#3F51B5</color>
+    <color name="red">#ff0000</color>
 </resources>

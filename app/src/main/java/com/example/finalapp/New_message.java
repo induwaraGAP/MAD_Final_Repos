@@ -37,6 +37,7 @@ public class New_message extends AppCompatActivity {
         setContentView(R.layout.activity_new_message);
         Spinner category = (Spinner) findViewById(R.id.category);
         ArrayList<String> items=  new ArrayList<String>();
+        items.clear();
         items.add("Students");
         items.add("Group");
         items.add("Year");

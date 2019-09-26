@@ -16,85 +16,24 @@
 
 
         <ListView
-            android:id="@+id/tblistviewfriday"
-            android:layout_width="67dp"
-            android:layout_height="560dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.896"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.612"
-            tools:ignore="DuplicateIds" />
-
-        <ListView
-            android:id="@+id/tblistviewthursday"
-            android:layout_width="67dp"
-            android:layout_height="560dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.672"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.619" />
-
-        <ListView
             android:id="@+id/tblistview"
-            android:layout_width="67dp"
-            android:layout_height="560dp"
+            android:layout_width="296dp"
+            android:layout_height="369dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.274"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.629" />
-
-        <ListView
-            android:id="@+id/tblistviewwednesday"
-            android:layout_width="67dp"
-            android:layout_height="560dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.626" />
-
-        <ListView
-            android:id="@+id/tblistviewtuesday"
-            android:layout_width="67dp"
-            android:layout_height="560dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.224"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.633" />
-
-        <ListView
-            android:id="@+id/tblistviewmonday"
-            android:layout_width="67dp"
-            android:layout_height="562dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.629"
-             >
+            app:layout_constraintVertical_bias="0.835">
 
         </ListView>
 
         <TextView
             android:id="@+id/textView19"
-            android:layout_width="340dp"
-            android:layout_height="33dp"
+            android:layout_width="143dp"
+            android:layout_height="38dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_bold"
@@ -102,6 +41,17 @@
             android:textSize="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/dayspinner"
+            android:layout_width="154dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.802"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

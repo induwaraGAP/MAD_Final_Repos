@@ -77,7 +77,7 @@ public class NotificationsFragment extends Fragment {
         progressDelete.setVisibility(View.GONE);
         loadingLayout.setVisibility(View.GONE);
 
-        ArrayAdapter<CharSequence> classTypeSpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()).getApplicationContext(), R.array.classType, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> classTypeSpinner = ArrayAdapter.createFromResource(getContext(), R.array.classType, android.R.layout.simple_spinner_item);
         classTypeSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerClassType.setAdapter(classTypeSpinner);
 
@@ -112,15 +112,15 @@ public class NotificationsFragment extends Fragment {
                 if (subjectID.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (classType.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (batchGroup.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else {
 
 
@@ -185,19 +185,19 @@ public class NotificationsFragment extends Fragment {
                                         if (status) {
                                             progressDelete.setVisibility(View.GONE);
                                             loadingLayout.setVisibility(View.GONE);
-                                            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.resultsFound), Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getContext(), getResources().getString(R.string.resultsFound), Toast.LENGTH_SHORT).show();
 
 
                                         } else {
                                             progressDelete.setVisibility(View.GONE);
                                             loadingLayout.setVisibility(View.GONE);
-                                            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.noResults), Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getContext(), getResources().getString(R.string.noResults), Toast.LENGTH_SHORT).show();
                                         }
 
                                     } else {
                                         progressDelete.setVisibility(View.GONE);
                                         loadingLayout.setVisibility(View.GONE);
-                                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.empty), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), getResources().getString(R.string.empty), Toast.LENGTH_SHORT).show();
                                     }
 
 
@@ -207,21 +207,21 @@ public class NotificationsFragment extends Fragment {
                                 public void onCancelled(@NonNull DatabaseError databaseError) {
                                     progressDelete.setVisibility(View.GONE);
                                     loadingLayout.setVisibility(View.GONE);
-                                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
                                 }
                             });
 
                         } catch (DatabaseException e) {
                             progressDelete.setVisibility(View.GONE);
                             loadingLayout.setVisibility(View.GONE);
-                            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
                         }
 
 
                     } else {
                         progressDelete.setVisibility(View.GONE);
                         loadingLayout.setVisibility(View.GONE);
-                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -282,22 +282,22 @@ public class NotificationsFragment extends Fragment {
                 if (subjectID.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (batchGroup.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (classType.isEmpty()) {
                     progressDelete.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else {
 
                     if (timeSlot != null) {
                         progressDelete.setVisibility(View.GONE);
                         loadingLayout.setVisibility(View.GONE);
 
-                        AlertDialog confirmDelete = new AlertDialog.Builder(Objects.requireNonNull(getActivity()).getApplicationContext())
+                        AlertDialog confirmDelete = new AlertDialog.Builder(Objects.requireNonNull(getContext()))
                                 //set message, title, and icon
                                 .setTitle(getResources().getString(R.string.confirmDelete))
                                 .setMessage(getResources().getString(R.string.deleteConfirmation))
@@ -323,12 +323,12 @@ public class NotificationsFragment extends Fragment {
                                                 progressDelete.setVisibility(View.GONE);
                                                 loadingLayout.setVisibility(View.GONE);
 
-                                                Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.deleteSuccess), Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(getContext(), getResources().getString(R.string.deleteSuccess), Toast.LENGTH_SHORT).show();
 
                                             } catch (DatabaseException e) {
                                                 progressDelete.setVisibility(View.GONE);
                                                 loadingLayout.setVisibility(View.GONE);
-                                                Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(getContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
 
                                             }
 
@@ -337,7 +337,7 @@ public class NotificationsFragment extends Fragment {
                                             timeSlot = null;
                                             progressDelete.setVisibility(View.GONE);
                                             loadingLayout.setVisibility(View.GONE);
-                                            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
                                         }
 
 
@@ -362,7 +362,7 @@ public class NotificationsFragment extends Fragment {
                     } else {
                         progressDelete.setVisibility(View.GONE);
                         loadingLayout.setVisibility(View.GONE);
-                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.noDelete), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.noDelete), Toast.LENGTH_SHORT).show();
                     }
 
                 }

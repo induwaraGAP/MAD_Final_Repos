@@ -38,17 +38,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SystemUser us = new SystemUser("G A P Induwara","IT18140712","G1",2,2,"Computing","s");
 
-//        Intent gotouserreg = new Intent(MainActivity.this, LoginActivity.class);
-//        startActivity(gotouserreg);
-
-
-
         if(currentitem != null) {
             intial = currentitem;
         }
         else
         {
-            intial = 0;
+            intial = 1;
         }
         mprofilelable =  (TextView) findViewById(R.id.profilelabel);
         muserslabel = (TextView) findViewById(R.id.userslabel);
@@ -68,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 setcurrent(0);
-                mmainpager.setCurrentItem(currentitem);
+                mmainpager.setCurrentItem(0);
             }
         });
         muserslabel.setOnClickListener(new View.OnClickListener() {

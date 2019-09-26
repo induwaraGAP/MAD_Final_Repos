@@ -94,11 +94,11 @@ public class HomeFragment extends Fragment {
         loadingInsert.setVisibility(View.GONE);
         loadingLayout.setVisibility(View.GONE);
 
-        ArrayAdapter<CharSequence> classTypeSpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(Objects.requireNonNull(getActivity()).getApplicationContext()), R.array.classType, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> facultySpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()).getApplicationContext(), R.array.faculties, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> yearSpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()).getApplicationContext(), R.array.years, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> semesterSpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()).getApplicationContext(), R.array.semesters, android.R.layout.simple_spinner_item);
-        ArrayAdapter<CharSequence> daySpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getActivity()).getApplicationContext(), R.array.dayOfTheWeek, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> classTypeSpinner = ArrayAdapter.createFromResource(Objects.requireNonNull(getContext()), R.array.classType, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> facultySpinner = ArrayAdapter.createFromResource(getContext(), R.array.faculties, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> yearSpinner = ArrayAdapter.createFromResource(getContext(), R.array.years, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> semesterSpinner = ArrayAdapter.createFromResource(getContext(), R.array.semesters, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> daySpinner = ArrayAdapter.createFromResource(getContext(), R.array.dayOfTheWeek, android.R.layout.simple_spinner_item);
 
         classTypeSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         facultySpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -267,65 +267,65 @@ public class HomeFragment extends Fragment {
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (batchGroup.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (classType.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (faculty.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (yearValue == 0) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (semesterValue == 0) {
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (startTime.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (endTime.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (dayWeek.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (hall.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else if (lecturer.isEmpty()) {
 
 
                     loadingInsert.setVisibility(View.GONE);
                     loadingLayout.setVisibility(View.GONE);
-                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), getResources().getString(R.string.requiredField), Toast.LENGTH_SHORT).show();
                 } else {
 
 
@@ -477,7 +477,7 @@ public class HomeFragment extends Fragment {
                                         loadingInsert.setVisibility(View.GONE);
                                         loadingLayout.setVisibility(View.GONE);
 
-                                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.insertSuccess), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), getResources().getString(R.string.insertSuccess), Toast.LENGTH_SHORT).show();
 
                                         clearFields();
                                     } else if (status && parseStatus) {
@@ -485,18 +485,18 @@ public class HomeFragment extends Fragment {
 
                                         loadingInsert.setVisibility(View.GONE);
                                         loadingLayout.setVisibility(View.GONE);
-                                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.timeGapError), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), getResources().getString(R.string.timeGapError), Toast.LENGTH_SHORT).show();
                                     } else if (status) {
                                         loadingInsert.setVisibility(View.GONE);
                                         loadingLayout.setVisibility(View.GONE);
 
-                                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.parseError), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), getResources().getString(R.string.parseError), Toast.LENGTH_SHORT).show();
                                     } else {
 
 
                                         loadingInsert.setVisibility(View.GONE);
                                         loadingLayout.setVisibility(View.GONE);
-                                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.timeslotExist), Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getContext(), getResources().getString(R.string.timeslotExist), Toast.LENGTH_SHORT).show();
                                     }
                                 }
 
@@ -506,7 +506,7 @@ public class HomeFragment extends Fragment {
 
                                     loadingInsert.setVisibility(View.GONE);
                                     loadingLayout.setVisibility(View.GONE);
-                                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
                                 }
                             });
 
@@ -516,14 +516,14 @@ public class HomeFragment extends Fragment {
 
                             loadingInsert.setVisibility(View.GONE);
                             loadingLayout.setVisibility(View.GONE);
-                            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), getResources().getString(R.string.databaseError), Toast.LENGTH_SHORT).show();
                         }
 
 
                     } else {
                         loadingInsert.setVisibility(View.GONE);
                         loadingLayout.setVisibility(View.GONE);
-                        Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), getResources().getString(R.string.noInternet), Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -562,7 +562,7 @@ public class HomeFragment extends Fragment {
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
 
-        timePickerDialog = new TimePickerDialog(Objects.requireNonNull(getActivity()).getApplicationContext(), new TimePickerDialog.OnTimeSetListener() {
+        timePickerDialog = new TimePickerDialog(Objects.requireNonNull(getContext()), new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int hourOfDay, int minutes) {
 
@@ -587,7 +587,7 @@ public class HomeFragment extends Fragment {
 
         txtEndTime.setShowSoftInputOnFocus(false);
 
-        timePickerDialog = new TimePickerDialog(Objects.requireNonNull(getActivity()).getApplicationContext(), new TimePickerDialog.OnTimeSetListener() {
+        timePickerDialog = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int hourOfDay, int minutes) {
 

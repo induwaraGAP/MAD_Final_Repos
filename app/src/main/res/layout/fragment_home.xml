@@ -36,15 +36,18 @@
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/subjectID" />
+                android:text="@string/subjectID"
+                android:textColor="#F8F5F5" />
 
             <EditText
                 android:id="@+id/txtSubjectCode"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/subject_insert_styles"
                 android:hint="@string/enterSubCode"
                 android:importantForAutofill="no"
-                android:inputType="text">
+                android:inputType="text"
+                android:textAlignment="center">
 
                 <requestFocus />
             </EditText>
@@ -57,15 +60,18 @@
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/group" />
+                android:text="@string/group"
+                android:textColor="#F8F5F5" />
 
             <EditText
                 android:id="@+id/txtBatchGroup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/subject_insert_styles"
                 android:hint="@string/enterBatch"
                 android:importantForAutofill="no"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textAlignment="center" />
 
             <Space
                 android:layout_width="match_parent"
@@ -75,14 +81,16 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/class_type" />
+                android:text="@string/class_type"
+                android:textColor="#F8F5F5" />
 
             <Spinner
                 android:id="@+id/spinnerClassType"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="35dp"
                 android:background="@drawable/spinner_style"
-                android:prompt="@string/class_type" />
+                android:prompt="@string/class_type"
+                android:textAlignment="center" />
 
             <Space
                 android:layout_width="match_parent"
@@ -105,21 +113,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/faculty1" />
+                        android:text="@string/faculty1"
+                        android:textColor="#F8F5F5" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/year1" />
+                        android:text="@string/year1"
+                        android:textColor="#F8F5F5" />
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/semester1" />
+                        android:text="@string/semester1"
+                        android:textColor="#F8F5F5" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -130,7 +141,7 @@
                     <Spinner
                         android:id="@+id/spinnerFaculty"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/spinner_style"
                         android:prompt="@string/select_faculty" />
@@ -138,7 +149,7 @@
                     <Spinner
                         android:id="@+id/spinnerYear"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/spinner_style"
                         android:prompt="@string/year" />
@@ -146,7 +157,7 @@
                     <Spinner
                         android:id="@+id/spinnerSemester"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/spinner_style"
                         android:prompt="@string/semester" />
@@ -174,14 +185,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/startTime" />
+                        android:text="@string/startTime"
+                        android:textColor="#F8F5F5" />
 
                     <TextView
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/endTime" />
+                        android:text="@string/endTime"
+                        android:textColor="#F8F5F5" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -193,23 +206,25 @@
                     <EditText
                         android:id="@+id/txtStartTime"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/border_background"
                         android:hint="@string/enterStartTime"
                         android:importantForAutofill="no"
                         android:inputType="text"
+                        android:textAlignment="center"
                         tools:ignore="NestedWeights" />
 
                     <EditText
                         android:id="@+id/txtEndTime"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:layout_weight="1"
                         android:background="@drawable/border_background"
                         android:hint="@string/enterEndTime"
                         android:importantForAutofill="no"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:textAlignment="center" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -221,14 +236,16 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/day" />
+                android:text="@string/day"
+                android:textColor="#F8F5F5" />
 
             <Spinner
                 android:id="@+id/spinnerDay"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:background="@drawable/spinner_style"
                 android:prompt="@string/selectDay"
+                android:textAlignment="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -242,15 +259,18 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/hall" />
+                android:text="@string/hall"
+                android:textColor="#F8F5F5" />
 
             <EditText
                 android:id="@+id/txtHallLab"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/subject_insert_styles"
                 android:hint="@string/enterLecHallLab"
                 android:importantForAutofill="no"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textAlignment="center" />
 
             <Space
                 android:layout_width="match_parent"
@@ -260,19 +280,23 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/lec" />
+                android:text="@string/lec"
+                android:textColor="#F8F5F5" />
 
             <EditText
                 android:id="@+id/txtLecIns"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/subject_insert_styles"
                 android:hint="@string/enterLecturer"
                 android:importantForAutofill="no"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:textAlignment="center" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="25dp" />
+                android:layout_height="25dp"
+                android:background="@drawable/subject_insert_styles" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -284,6 +308,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_style_niroshan"
                     android:text="@string/insert"
                     tools:ignore="ButtonStyle" />
 
@@ -292,6 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/btn_style_niroshan"
                     android:text="@string/reset"
                     tools:ignore="ButtonStyle" />
             </LinearLayout>

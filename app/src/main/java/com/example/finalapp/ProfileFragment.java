@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.finalapp.models.SystemUser;
 import com.google.firebase.database.DatabaseReference;
@@ -24,14 +25,9 @@ import java.util.ArrayList;
  */
 public class ProfileFragment extends Fragment {
 
-    private ListView listviewprofile;
-    private ArrayAdapter<String> arrayadapterprofile;
-    private ArrayList<String> profile_details_list = new ArrayList<>();
-    private DatabaseReference reffprodetails,reffdelpro;
-    private View viewpro;
-    private  Button delbtn;
+    private TextView id, name, year, semester, faculty, group, type;
     private SystemUser suser =  new SystemUser();
-
+    private  View viewpro;
     public ProfileFragment() {
         // Required empty public constructor
     }
@@ -42,14 +38,16 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        viewpro = inflater.inflate(R.layout.fragment_notification,container,false);
+        viewpro = inflater.inflate(R.layout.fragment_profile,container,false);
 
+        id = (TextView) viewpro.findViewById(R.id.f_id);
+        name =  (TextView) viewpro.findViewById(R.id.f_name);
+        year =  (TextView) viewpro.findViewById(R.id.f_year);
+        semester =  (TextView) viewpro.findViewById(R.id.f_semester);
+        faculty =  (TextView) viewpro.findViewById(R.id.f_faculty);
+        group =  (TextView) viewpro.findViewById(R.id.f_group);
+        type =  (TextView) viewpro.findViewById(R.id.f_type);
 
-        arrayadapterprofile =  new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,profile_details_list);
-        listviewprofile =  (ListView) viewpro.findViewById(R.id.listview1);
-        delbtn = (Button) viewpro.findViewById(R.id.btndel);
-        listviewprofile.setAdapter(arrayadapterprofile);
-        reffprodetails = FirebaseDatabase.getInstance().getReference().child("Users").child(suser.getId());
         return viewpro;
     }
 

@@ -27,40 +27,6 @@
     <string name="endTime">End Time</string>
     <string name="enterStartTime">Start Time Here&#8230;</string>
     <string name="enterEndTime">End Time Here&#8230;</string>
-    <string-array name="dayOfTheWeek">
-        <item>-- Select Day of the Week --</item>
-        <item>Monday</item>
-        <item>Tuesday</item>
-        <item>Wednesday</item>
-        <item>Thursday</item>
-        <item>Friday</item>
-        <item>Saturday</item>
-        <item>Sunday</item>
-    </string-array>
-    <string-array name="classType">
-        <item>-- Select Class Type --</item>
-        <item>Lecture</item>
-        <item>Tutorial</item>
-        <item>Lab</item>
-    </string-array>
-    <string-array name="faculties">
-        <item>#Faculty</item>
-        <item>Computing</item>
-        <item>Business</item>
-        <item>Engineering</item>
-    </string-array>
-    <string-array name="years">
-        <item>#Year</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="semesters">
-        <item>#Semester</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
     <string name="select_faculty">Select Faculty&#8230;</string>
     <string name="year">Select Year&#8230;</string>
     <string name="semester">Select Semester&#8230;</string>
@@ -101,4 +67,41 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string-array name="dayOfTheWeek">
+        <item>-- Select Day of the Week --</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="classType">
+        <item>-- Select Class Type --</item>
+        <item>Lecture</item>
+        <item>Tutorial</item>
+        <item>Lab</item>
+    </string-array>
+    <string-array name="faculties">
+        <item>#Faculty</item>
+        <item>Computing</item>
+        <item>Business</item>
+        <item>Engineering</item>
+    </string-array>
+    <string-array name="years">
+        <item>#Year</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="semesters">
+        <item>#Semester</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="subjectInsert">Subject Insert</string>
+    <string name="subjectUpdate">Subject Update</string>
+    <string name="subjectDelete">Subject Delete</string>
 </resources>

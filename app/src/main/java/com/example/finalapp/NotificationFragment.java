@@ -82,7 +82,7 @@ public class NotificationFragment extends Fragment {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent gotonewmsg = new Intent(getActivity().getApplicationContext(),New_message.class);
+                Intent gotonewmsg = new Intent(getContext(),New_message.class);
                 startActivity(gotonewmsg);
             }
         });

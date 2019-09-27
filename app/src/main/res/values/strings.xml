@@ -67,6 +67,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="subjectInsert">Subject Insert</string>
+    <string name="subjectUpdate">Subject Update / Delete</string>
+    <string name="subjectNAME">Subject name</string>
+    <string name="facultyNAME">Faculty</string>
+    <string name="subjectDelete">Subject Delete</string>
     <string-array name="dayOfTheWeek">
         <item>-- Select Day of the Week --</item>
         <item>Monday</item>
@@ -101,7 +106,4 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string name="subjectInsert">Subject Insert</string>
-    <string name="subjectUpdate">Subject Update</string>
-    <string name="subjectDelete">Subject Delete</string>
 </resources>

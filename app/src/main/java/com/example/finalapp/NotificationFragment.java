@@ -18,8 +18,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.finalapp.firebase_models.Notices;
+import com.example.finalapp.models.SystemUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -57,6 +59,8 @@ public class NotificationFragment extends Fragment {
     private  String body ;
     private HashMap<Integer,ArrayList<String>> recmap =  new HashMap<Integer, ArrayList<String>>();
     private String subjectnode;
+    private SystemUser sysuser = new SystemUser();
+    private Integer status = 0;
 
     public NotificationFragment() {
 
@@ -67,6 +71,12 @@ public class NotificationFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        System.out.println("id " +sysuser.getId());
+        System.out.println("name "+ sysuser.getName());
+        System.out.println("group  " + sysuser.getGroup());
+        System.out.println("year"+ sysuser.getYear());
+        System.out.println("sem " +sysuser.getSem());
+        System.out.println("faculty "+ sysuser.getFaculty());
         view = inflater.inflate(R.layout.fragment_notification,container,false);
 
         arrayadapter =  new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,list_of_messages);
@@ -79,6 +89,10 @@ public class NotificationFragment extends Fragment {
 
         reffshownoti = FirebaseDatabase.getInstance().getReference().child("Notices");
 
+        if(sysuser.getType().toString().equals("student"))
+        {
+            send.setVisibility(View.GONE);
+        }
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -99,16 +113,25 @@ public class NotificationFragment extends Fragment {
                         .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
+                                if( sysuser.getType().toString().equals("student"))
+                                {
+                                    list_of_messages.remove(which_one);
 
-                                selecteditem = ((TextView)view).getText().toString();
+                                    arrayadapter.notifyDataSetChanged();
+                                    Toast.makeText(getContext(),"Delete from the List",Toast.LENGTH_LONG);
+                                }
+                                else {
+                                    selecteditem = ((TextView) view).getText().toString();
 
-                                reffdelnoti = FirebaseDatabase.getInstance().getReference().child("Notices").child(idmapnotice.get(selecteditem));
+                                    reffdelnoti = FirebaseDatabase.getInstance().getReference().child("Notices").child(idmapnotice.get(selecteditem));
 
-                                reffdelnoti.removeValue();
+                                    reffdelnoti.removeValue();
 
-                                list_of_messages.remove(which_one);
+                                    list_of_messages.remove(which_one);
 
-                                arrayadapter.notifyDataSetChanged();
+                                    arrayadapter.notifyDataSetChanged();
+                                    Toast.makeText(getContext(),"Delete from the List & Database",Toast.LENGTH_LONG);
+                                }
                             }
                         }).setNegativeButton("Update", new DialogInterface.OnClickListener() {
                         @Override
@@ -141,26 +164,37 @@ public class NotificationFragment extends Fragment {
                     DataSnapshot ds =  (DataSnapshot)i.next();
 
                     id = ds.getKey();
+                    recievers = (ArrayList<String>) ds.child("recievers").getValue();
+                    status = 0;
+                    for(String recnames  : recievers)
+                    {
+                        System.out.println("this is recname " + recnames);
+                        if( (recnames.equals(sysuser.getId())) || (recnames.equals(sysuser.getGroup())) || (recnames.equals(String.valueOf(sysuser.getSem()))) || (recnames.equals( String.valueOf(sysuser.getYear()))) || (sysuser.getType().equals("lecturer")) ){
+                            status = 1;
+                        }
+                    }
+                    if(status == 1) {
+                        topic = id.split("sep");
+                        System.out.println("this is the topic  " + Arrays.toString(topic));
+                        date = topic[1].split("_");
 
-                    topic = id.split("sep");
-                    System.out.println("this is the topic  " + Arrays.toString(topic));
-                    date = topic[1].split("_");
+                        System.out.println("these are the recievers");
+                        body = ds.child("message").getValue().toString();
 
-                    body = ds.child("message").getValue().toString();
+                        recmap.put(counter, (ArrayList) ds.child("recievers").getValue());
 
-                    recmap.put(counter,(ArrayList)ds.child("recievers").getValue());
+                        subjectnode = ds.child("subject").getValue().toString();
 
-                    subjectnode = ds.child("subject").getValue().toString();
+                        Display = "\n" + "Sender: " + topic[0] +
+                                "\n" + "Date: " + date[0] + " " + date[1] + date[2] +
+                                "\n" + "Subject: " + subjectnode + "\n"
+                                + "Body : " + body + "\n";
 
-                    Display =  "\n" +"Sender: "+ topic[0] +
-                            "\n"+ "Date: " + date[0]+" " +date[1] + date[2] +
-                            "\n" +"Subject: "+ subjectnode + "\n"
-                            +"Body : " +body+"\n";
+                        idmapnotice.put(Display, id);
 
-                    idmapnotice.put(Display,id);
-
-                    set.add(Display);
-                    counter++;
+                        set.add(Display);
+                        counter++;
+                    }
 
                 }
                 counter = 0;

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<!--        <activity android:name=".Logincheckuser"></activity>-->
+        <activity android:name=".subject_update"></activity>
+        <activity android:name=".subject_delete" /> <!-- <activity android:name=".Logincheckuser"></activity> -->
         <activity android:name=".Logincheckuser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +21,14 @@
         <activity
             android:name=".TimeSlotActivity"
             android:label="@string/title_activity_timeslot"
-
             android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" /> <!-- <activity android:name=".NotificationUpdate" /> -->
-         <activity android:name=".UserDelete" />
-         <activity android:name=".LoginActivity" />
+        <activity android:name=".UserDelete" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MenuActivity" />
-         <activity android:name=".MessageDetail" />
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MessageDetail" />
         <activity android:name=".New_message" /> <!-- <activity android:name=".TimeTableInsert" /> -->
-        <!-- <activity android:name=".Subject_Insert" /> -->
-<!--        <activity android:name=".MainActivity" />-->
+        <activity android:name=".Subject_Insert" /> <!-- <activity android:name=".MainActivity" /> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.MAIN" /> -->
         <!-- <category android:name="android.intent.category.LAUNCHER" /> -->

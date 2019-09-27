@@ -8,7 +8,7 @@ public class Users {
     private String group;
     private String faculty;
     private String password;
-    private String image_url;
+
     private String type; //to check whether a student or a lecturer
 
 
@@ -17,8 +17,8 @@ public class Users {
 
     }
 
-
-    public Users(String IT_NO, String name, Integer year, Integer sem, String group, String faculty,String password,String image_url) {
+    //IT_NO, Name, Year, Semester, Group, Faculty, Password, Type
+    public Users(String IT_NO, String name, Integer year, Integer sem, String group, String faculty,String password,String type) {
         this.IT_NO = IT_NO;
         this.name = name;
         this.year = year;
@@ -26,7 +26,8 @@ public class Users {
         this.group = group;
         this.faculty = faculty;
         this.password = password;
-        this.image_url = image_url;
+
+        this.type = type;
     }
 
     public String getType() {
@@ -44,13 +45,7 @@ public class Users {
         this.password = password;
     }
 
-    public String getImage_url() {
-        return image_url;
-    }
 
-    public void setImage_url(String image_url) {
-        this.image_url = image_url;
-    }
 
     public String getIT_NO() {
         return IT_NO;

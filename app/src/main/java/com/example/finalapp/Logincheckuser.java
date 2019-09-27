@@ -85,14 +85,16 @@ public class Logincheckuser extends AppCompatActivity {
                 if(suserid.equals(userid.getText().toString().trim()) && (spassword.equals(password.getText().toString().trim()))) {
                     Log.i("details" ,"FOUND PASS");
 
-                    SystemUser usr = new SystemUser(ds.child("name").getValue().toString(),suserid,ds.child("group").getValue().toString()  , Integer.parseInt(ds.child("year").getValue().toString() ) ,Integer.parseInt(ds.child("sem").getValue().toString()),ds.child("faculty").getValue().toString(),ds.child("type").getValue().toString());
-                   if(ds.child("type").getValue().toString().equals("admin"))
+                    SystemUser usr = new SystemUser(ds.child("name").getValue().toString(),suserid,ds.child("group").getValue().toString() , Integer.parseInt(ds.child("year").getValue().toString() ) ,Integer.parseInt(ds.child("sem").getValue().toString()),ds.child("faculty").getValue().toString(),ds.child("type").getValue().toString());
+
+
+                    if(ds.child("type").getValue().toString().equals("admin"))
                    {
                        Intent gotoadminpanel =  new Intent(getApplicationContext(),MenuActivity.class);
                        startActivity(gotoadminpanel);
                    }
                    else {
-                       Intent gotomainfirst = new Intent(Logincheckuser.this, MainActivity.class);
+                       Intent gotomainfirst = new Intent(getApplicationContext(), MainActivity.class);
                        startActivity(gotomainfirst);
                    }
                 }

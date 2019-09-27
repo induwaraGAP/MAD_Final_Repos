@@ -26,6 +26,23 @@
         app:layout_constraintVertical_bias="0.944"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/subject_insert_styles"
+        android:text="Back"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/subjectname"
         android:layout_width="290dp"
@@ -35,10 +52,11 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/subject_insert_styles"
         android:ems="10"
+        android:hint="@string/subjectNAME"
         android:inputType="textPersonName"
-        android:text="@string/Subject_name"
         android:textAlignment="center"
         android:textColor="#B2BEB5"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
@@ -57,9 +75,9 @@
         android:background="@drawable/subject_insert_styles"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/faculty"
         android:textAlignment="center"
         android:textColor="#B2BEB5"
+        android:hint="@string/facultyNAME"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
@@ -69,7 +87,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/sliitid"
+        android:id="@+id/lecturername"
         android:layout_width="290dp"
         android:layout_height="58dp"
         android:layout_alignParentStart="true"
@@ -77,8 +95,9 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/subject_insert_styles"
         android:ems="10"
+        android:hint="Lecturer Name"
         android:inputType="textPersonName"
-        android:text="@string/Sliit_ID"
+        android:text="Lecturer Name"
         android:textAlignment="center"
         android:textColor="#B2BEB5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -96,9 +115,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/subject_insert_styles"
         android:ems="10"
+        android:hint="@string/subjectID"
         android:inputType="textPersonName"
-        android:text="@string/subjectid"
         android:textAlignment="center"
         android:textColor="#B2BEB5"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +129,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/banner"
 
         android:layout_width="261dp"
         android:layout_height="58dp"

@@ -16,16 +16,41 @@
 
         <Button
             android:id="@+id/btndel"
-            android:layout_width="131dp"
-            android:layout_height="55dp"
-            android:background="@drawable/subject_insert_styles"
+            android:layout_width="86dp"
+            android:layout_height="49dp"
+            android:background="@drawable/fragment_btn_free"
             android:text="Delete Account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintHorizontal_bias="0.063"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.975" />
+
+        <Button
+            android:id="@+id/btnup"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fragment_btn_free"
+            android:text="Update Account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.973" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="88dp"
+            android:layout_height="51dp"
+            android:background="@drawable/fragment_btn_free"
+            android:text="Log out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.973" />
 
         <TextView
             android:id="@+id/textView26"
